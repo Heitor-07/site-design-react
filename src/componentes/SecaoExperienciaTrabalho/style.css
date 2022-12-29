@@ -1,0 +1,78 @@
+
+.secaoExperienciaTrabalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.secaoExperienciaTrabalho h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #32333c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secaoExperienciaTrabalho h2::after {
+    content: '';
+    background-color: #feb633;
+    display: flex;
+    width: 90px;
+    height: 5px;
+    margin: 15px 0 35px;
+}
+
+.secaoExperienciaTrabalho .paragrafo1 {
+    width: 75%;
+    margin-bottom: 70px;
+}
+
+.box-cards {
+    display: flex;
+    justify-content: center;
+}
+
+/* Classes dinâmica do Tema Claro */
+
+#secaoExperienciaTrabalho-bg-claro {
+    background-color: #f6f8fc;
+}
+
+#paragrafo1-claro {
+    color: #8a8fa3;
+}
+
+/* Classes dinâmica do Tema escuro */
+
+#secaoExperienciaTrabalho-bg-escuro {
+    background-color: #393838;
+}
+
+#secaoExperienciaTrabalho-bg-escuro h2, #paragrafo1-escuro {
+    color: #cccccc;
+}
+
+.limitar-secao {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+@media screen and (max-width: 1024px) {
+    .secaoExperienciaTrabalho {
+        padding: 70px 15px;;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .secaoExperienciaTrabalho {
+        padding: 70px 10px;;
+    }
+
+    .box-cards {
+        flex-direction: column;
+    }
+}

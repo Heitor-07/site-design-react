@@ -1,0 +1,78 @@
+
+.secao-banner {
+    height: 95vh;
+    display: flex;
+}
+
+.banner-img, .banner-conteudo {
+    width: calc(100% / 2);
+}
+
+.banner-img {
+    background-image: url('/public/assets/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.banner-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+    color: #022144;
+    background-color: #fafbfc;
+}
+
+.banner-conteudo p{
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.banner-conteudo h2 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.banner-conteudo span {
+    font-size: 50px;
+    font-weight: 900;
+    color: #022144;
+}
+
+/* Tema escuro */
+
+#efeitoClaroBanner {
+    background-color: #fff;
+}
+
+#efeitoEscuroBanner {
+    background-color: #252525;
+}
+
+@media screen and (max-width: 1024px) {
+    .banner-img {
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-img {
+        display: none;
+    }
+    
+    .banner-conteudo {
+        width: 100%;
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner-conteudo h2 {
+        font-size: 50px;
+    }
+    .banner-conteudo span {
+        font-size: 55px;
+    }
+}

@@ -1,0 +1,64 @@
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 150px 25px;
+    color: #8a8fa3;
+}
+
+.rodape img {
+    width: auto;
+    height: auto;
+}
+
+.paragrafo-rodape {
+    width: 70%;
+}
+
+.redesSociais img {
+    height: 45px;
+}
+
+.redesSociais img:not(:last-child){
+    margin-right: 15px;
+}
+
+.logo, .redesSociais {
+    margin: 35px 0 25px;
+}
+
+.assinatura {
+    margin-top: 60px;
+}
+
+.assinatura span{
+    color: #f3b633;
+}
+
+/* Tem claro */
+
+#rodape-claro {
+    background-color: #ffffff;
+}
+
+/* Tem escuro */
+
+#rodape-escuro {
+    background-color: #252525;
+}
+
+@media screen and (max-width: 768px) {
+    .rodape {
+        padding: 60px 15px 25px;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .rodape {
+        padding: 60px 10px 25px;
+    }
+    
+}

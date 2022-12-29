@@ -1,0 +1,43 @@
+
+header {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    height: 35px;
+    object-fit: contain;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button img {
+    height: 25px;
+}
+
+/* Tema escuro */
+
+.topo-claro {
+    background-color: #ffffff;
+}
+
+/* Tema escuro */
+
+.borda-claro {
+    border: 2px solid #fff;
+}
+
+.borda-escuro {
+    border: 2px solid #747272;
+}
+
+.topo-escuro {
+    background-color: #252525;
+}

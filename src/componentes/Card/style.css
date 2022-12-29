@@ -1,0 +1,70 @@
+
+#card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    padding: 70px 30px;
+    border: 1px solid #fafbfc;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+#card h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+#card p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.segundo-paragrafo {
+    margin-bottom: 10px;
+}
+
+#card:hover {
+    background-color: #feb633;
+    border: 1px solid #edecec;
+    transition: all 1s;
+}
+
+/* Card Tema Claro */
+
+.card-claro {
+    border: 1px solid #edecec;
+}
+
+.card-claro h4 {
+    color: #32333a;
+}
+
+.card-claro p {
+    color: #8a8fa3;
+}
+
+/* Tema escuro */
+
+.card-escuro {
+    background-color: #393838;
+    border: 1px solid #ffffff0d;
+}
+
+.card-escuro h4 {
+    color: #fff;
+}
+
+.card-escuro p {
+    color: #9F9F9F;
+}
+
+@media screen and (max-width: 1024px) {
+    #card {
+        padding: 40px 45px 40px 20px;
+    }
+    #card p {
+        font-size: 16px;
+    }
+}
